@@ -13,6 +13,7 @@ RUN conda install --quiet --yes -n python2 'tensorflow=1.0*'
 RUN conda install -c conda-forge fbprophet
 
 # Install some Python libraries
+RUN conda install -c damianavila82 rise
 RUN pip3 install --upgrade pandas-datareader
 RUN pip3 install --upgrade quandl
 RUN pip3 install --upgrade statsmodels
