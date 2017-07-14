@@ -1,7 +1,12 @@
 notebook:
   container_name: 'jupyter-notebook'
+
   build: .
+
   ports:
     - '8888:8888'
+
   volumes:
-    - .:/home/jovyan/work
+    - ./Clients:/home/jovyan/work/Clients
+    - ./Private:/home/jovyan/work/Private
+    - ./Public:/home/jovyan/work/Public
