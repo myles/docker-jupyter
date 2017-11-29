@@ -3,3 +3,5 @@ Private/
 Public/
 Talks/
 
+# macOS Stuff
+.DS_Store
