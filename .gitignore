@@ -1,7 +1,11 @@
-Clients/
-Private/
-Public/
-Talks/
+# Ignore all the things:
+*
 
-# macOS Stuff
-.DS_Store
+# Don't ignore the following files and folders
+!.dockerignore
+!.gitignore
+!docker-compose.yml
+!Dockerfile
+!README.md
+!repos.py
+!repos.json
