@@ -7,6 +7,4 @@ notebook:
     - '8888:8888'
 
   volumes:
-    - ./Clients:/home/jovyan/work/Clients
-    - ./Private:/home/jovyan/work/Private
-    - ./Public:/home/jovyan/work/Public
+    - ./:/home/jovyan/work/

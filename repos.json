@@ -1,0 +1,7 @@
+{
+  "Private/": "git@github.com:myles/notebooks-pvt.git",
+  "Public/": "git@github.com:myles/notebooks.git",
+  "Talks/2017-09-12-gtalug-web-scraping": "git@github.com:myles/2017-09-12-gtalug-web-scraping.git",
+  "Talks/2017-09-13-python-toronto-web-scraping": "git@github.com:myles/2017-09-13-python-toronto-web-scraping.git",
+  "Talks/2017-09-27-pydatato-web-scraping-tutorial": "git@github.com:myles/2017-09-27-pydatato-web-scraping-tutorial.git"
+}
