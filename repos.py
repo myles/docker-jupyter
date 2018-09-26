@@ -6,16 +6,16 @@ import os
 import click
 from git import Repo, GitCommandError
 
-root_dir = os.path.dirname(os.path.abspath(__file__))
+ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 with open('repos.json') as fobj:
-    notebook_repos = json.load(fobj)
+    NOTEBOOK_REPOS = json.load(fobj)
 
 if os.path.isfile('repos.private.json'):
     with open('repos.private.json') as fobj:
-        notebook_repos.update(json.load(fobj))
+        NOTEBOOK_REPOS.update(json.load(fobj))
 
-notebook_repos = collections.OrderedDict(sorted(notebook_repos.items()))
+NOTEBOOK_REPOS = collections.OrderedDict(sorted(NOTEBOOK_REPOS.items()))
 
 
 @click.group()
@@ -26,8 +26,8 @@ def cli():
 @click.command()
 def init():
     """Clone all the repos."""
-    for local, remote in notebook_repos.items():
-        full = os.path.join(root_dir, local)
+    for local, remote in NOTEBOOK_REPOS.items():
+        full = os.path.join(ROOT_DIR, local)
 
         if not os.path.exists(full):
             Repo.clone_from(remote, os.path.join(full))
@@ -38,8 +38,8 @@ def init():
 
 @click.command()
 def status():
-    for local, remote in notebook_repos.items():
-        full = os.path.join(root_dir, local)
+    for local, _remote in NOTEBOOK_REPOS.items():
+        full = os.path.join(ROOT_DIR, local)
 
         repo = Repo(full)
 
