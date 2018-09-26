@@ -4,6 +4,7 @@
 # Don't ignore the following files and folders
 !.dockerignore
 !.gitignore
+!cleanup.py
 !docker-compose.yml
 !Dockerfile
 !README.md
