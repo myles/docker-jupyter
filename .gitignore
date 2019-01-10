@@ -10,3 +10,5 @@
 !README.md
 !repos.py
 !repos.json
+!Pipfile
+!Pipfile.lock
