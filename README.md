@@ -1,10 +1,4 @@
-# Docker Jupyter Notebook
+# Notebooks Scripts
 
-This is the Docker configuration for my Jupyter Notebook instance.
+This is some scripts I like to have around my Jupyter notebooks.
 
-## Docker Usage
-
-```bash
-$ docker-compose build
-$ docker-compose run
-```
